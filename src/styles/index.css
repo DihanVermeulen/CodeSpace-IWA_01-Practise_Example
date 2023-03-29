@@ -1,0 +1,77 @@
+:root {
+  --background-colour: #000000;
+  --primary-text-colour: #e2f8e3;
+  --secondary-text-colour: #084409;
+  --primary-colour: #fde7e7;
+  --secondary-colour: #e2f8e3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main--heading {
+  font-size: 6rem;
+  color: var(--primary-text-colour);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-colour);
+  text-align: center;
+  height: 100vh;
+}
+
+#tally-counter--number {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 100px;
+}
+
+#tally-counter {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#tally-counter--button-left {
+  background-color: var(--primary-colour);
+}
+
+#tally-counter--button-right {
+  background-color: var(--secondary-colour);
+}
+
+.tally-counter--button {
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 100px;
+  border-radius: 10px;
+}
+
+.tally-counter--button:hover {
+  filter: brightness(105%);
+}
